@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 
+   HWC Layout Styles
+   Filename: hwc_layout.css
+   
+   Author: Julio Garcia 	
+   Date:   04/27/2023
+*/
+
+/* Body Layout Styles */
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+/* Body Header Layout Styles */
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Body Nav Layout Styles */
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+}
+
+/* Body Article Layout Styles */
+body > article#about_hwc {
+	width: 51%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+body > article#about_hwc img {
+	border-radius: 20px;
+	float: right;
+	width: 40%;
+	margin: 20px 0 10px 10px;
+}
+
+/* Body Aside Layout Styles */
+body > aside {
+	width: 20%;
+	float: left;
+	margin: 0 1.5% 0 0;
+}
+
+body > aside img#photo {
+	border-radius: 20px;
+	float: right;
+	width: 100%;
+	margin: 150px 0 0px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+
+body > aside img#photo2 {
+	border-radius: 20px;
+	float: right;
+	width: 100%;
+	margin: 100px 0 0px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+
+body > aside img#sample1 {
+	float: right;
+	width: 100%;
+	margin: 400px 0 0px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+
+body > aside img#sample2 {
+	float: right;
+	width: 100%;
+	margin: 200px 0 0px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+
+
+body > aside img#CPL{
+	display: block;
+	float: right;
+	width: 100%;
+	margin: 250px 0 0px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+body > aside > figcaption{
+	text-align: right;
+	width: 100%;
+}
+
+/* Secondary Article Layout Style */
+article.program {
+    float: left;
+	width: 74.5%;
+	margin: 0 4% 0 0%;
+}
+article.program > img {
+	border-radius: 20px;
+	float: right;
+	width: 25%;
+	margin: 30px 0 10px 10px;
+	box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			    rgb(0, 0, 0) -15px 0px 25px;
+}
+section#schedule {
+	float: left;
+	width: 100%;
+	margin: 0 4% 0 0%;
+}
+
+section#images {
+	float: left;
+	width: 100%;
+	margin: 0 5% 2% 10%;
+}
+
+section#images > img {
+	float: left;
+	width: 15%;
+	margin: 0 20px 5px 15px;
+}
+
+section#video {
+	float: left;
+	width: 100%;
+	margin: 0 4% 0 0%;
+}
+
+section#video > video {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 30px 0 30px 0;
+}
+
+/* Body Footer Layout Styles */
+body > footer {
+	width: 100%;
+	clear: left;
+}

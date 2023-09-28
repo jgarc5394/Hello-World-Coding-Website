@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--
+    ITSE 1411 Final Project
+    
+    Registration Page for HWC
+    Author: Julio Garcia 	
+    Date:   05/01/2023
+
+    Filename: hwc_su.html
+   -->
+<head>
+   <meta charset="utf-8" />
+   <meta name="keywords" content="hello, world, coding, programming, code" />
+   <title>Registration HWC</title>
+   <link href="hwc_reset.css" rel="stylesheet" />
+   <link href="hwc_styles.css" rel="stylesheet" />
+   <link href="hwc_layout.css" rel="stylesheet" />
+   <link href="hwc_form.css" rel="stylesheet" />
+</head>
+<body>
+   <header><img src="banner_logo.png" alt="Hello World! Coding" /></header>
+   <nav>
+		<h1>Links</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="hwc_re.html">Registration</a></li>
+			<li><a href="hwc_hw.html">Hello World!</a></li>
+			<li><a href="hwc_cpp.html">C++</a></li>
+			<li><a href="hwc_py.html">Python</a></li>
+			<li><a href="hwc_html_css.html">HTML and CSS</a></li>
+			<li><a href="hwc_cs.html">Class Schedule</a></li>
+			<li><a href="hwc_pe.html">Project Example</a></li>
+		</ul>	
+   </nav>
+   <article class="program">
+      <h1>Registration Form</h1>
+      <p>So you decided you wanted to join the amazing world of programming? Great!
+	  The first step on your journey at Hello World! Coding is to fill out our 
+	  registration form. Whether your goals are big or small, or you have a longing 
+	  curiosity for coding, or maybe you just want to pick up a new hobby, we are happy 
+	  to have you!</p>
+	  <p>Our instructors are driven by our vision to "Make Coding Fun for Everyone!"
+	  Instructors at Hello World! Coding are motivated and determined to see every student
+	  become successful. Computer programming is much like an art form, and by the time
+	  each student completes each program, they will be able to demonstrate their creativity
+	  and skills through their projects!</p>
+	  <p>Once you've completed the registration form with all the required information, a staff
+	  member from Admissions will be in touch with you within a week's time.</p>
+	  <p>Courses are priced at $500 per course.</p>
+	  <p>Required Values are marked by an asterisk(*)</p>
+	  <form id="registration" action="mailto:helloworld@example.com" method="post" enctype="text/plain" >
+		<fieldset id="studentInfo">
+			<legend>Student Information</legend>
+			<div class="formRow">
+				<label for="name">Name*</label>
+				<input name="studentName" id="name" type="text" placeholder="first and last name" required />
+			</div>
+			<div class="formRow">
+				<label for="SSN">SSN*</label>
+				<input name="studentSSN" id="SNN" type="text" placeholder="***-**-****" pattern="\d{9}$|^\d{3}-?\d{2}-?\d{4}" required />
+			</div>
+			<div class="formRow">
+				<label for="birthDate">Birth Date*</label>
+				<input name="birthDate" id="bDay" type="date" required />
+			</div>
+			<div class="formRow">
+				<label for="gender">Gender*</label>
+				<input name="gender" id="gender" type="text" list="genderType" required/>
+				<datalist id="genderType">
+					<option value="Male">
+					<option value="Female">
+					<option value="Non Binary">
+					<option value="Prefer Not to Answer">
+				</datalist>
+			</div>
+			<div class="formRow">
+				<label for="ethnicity">Ethnicity*</label>
+				<input name="ethnicity" id="ethnicity" type="text" list="ethnicityType" required />
+				<datalist id="ethnicityType">
+					<option value="American Indian or Alaska Native">
+					<option value="Asian">
+					<option value="Black or African American">
+					<option value="Hispanic or Latino">
+					<option value="Native Hawaiian or Other Pacific Islander">
+					<option value="White">
+				</datalist>
+			</div>
+			<div class="formRow">
+				<label for="street">Street address</label>
+				<input name="street" id="street" type="text" />
+			</div>
+			
+			<div class="formRow">
+				<label for="city">City</label>
+				<input name="city" id="city" type="text" value="McAllen" />
+			</div>
+			
+			<div class="formRow">
+				<label for="state">State</label>
+				<input name="state" id="state" type="text" value="TX" />
+			</div>
+			
+			<div class="formRow">
+				<label for="zip">Postal code</label>
+				<input name="zip" id="zip" type="text" placeholder="***** (-****)" pattern="^\d{5}(-\d{4})?$" />
+			</div>
+			<div class="formRow">
+				<label for="phone">Phone number</label>
+				<input name="phone" id="phone" type="tel"  placeholder="(***) ***-****" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+			</div>
+			<div class="formRow">
+				<label for="mail">E-mail*</label>
+				<input name="email" id="mail" type="email" required />
+			</div>
+			<div class="formRow">
+			<label for="class">Choose a course(s)</label>
+			<select name="class" id="class" size="3" multiple>
+				<option value="c++">C++</option>
+				<option value="python">Python</option>
+				<option value="htmlcss">HTML and CSS</option>
+			</select>
+			</div>
+			<label for="shareBox">Share your goals with us!</label>
+			<textarea name="share" id="shareBox"></textarea>
+		</fieldset>
+		<div id="buttons">
+			<input type="submit" value="Register" />
+			<input type="reset" value="Cancel" />
+		</div>
+	</form>
+   </article>
+   <footer>
+      <address>
+      Hello World! Coding &#8226; 123 Example St. &#8226; McAllen, TX 
+      78572 &#8226; 956.485.3366
+      </address>
+   </footer>
+</body>  
+</html>

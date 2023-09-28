@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 
+   Typography and Color Styles for Hello World! Coding site
+   Filename: hwc_styles1.css
+   
+   Author: Julio Garcia 	
+   Date:   04/27/2023
+*/
+
+/* HTML Styles */
+
+html {
+	background-image: url(hwc_bg.png);
+	background-color: rgb(48, 25, 52);  
+}
+
+/* Body Styles */
+body {
+   font-family: Cascadia Code SemiBold, Quicksand, Verdana;
+   color: ivory;
+   background-color: rgb(53, 57, 53); 	
+   width: 1080px;
+   box-shadow: rgb(0, 0, 0) 15px 0px 25px,
+			   rgb(0, 0, 0) -15px 0px 25px;
+}
+
+/* Body Header Styles */
+
+body > header > img {
+	display: block;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+/* Heading Styles */
+h1, h2{
+	font-family: Cascadia Code SemiBold, Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em; 
+	border-radius: 20px;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	background-color: rgb(48, 25, 52);
+}
+
+article#about_hwc h1{
+	text-align: center;
+	color: white;
+	background-color: rgb(48, 25, 52);
+}
+
+article.program h1 {
+	text-align: center;
+	background-color: rgb(48, 25, 52);
+	color: rgb(255, 255, 255);
+}
+
+/* Paragraph Styles */
+p{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* Aside and Blockquote Styles */
+aside {
+	font-size: 1em;
+}
+
+aside blockquote{
+	font-size: 0.8em;
+	color: rgb(173, 216, 230);
+	margin: 20px 5px;
+	quotes: "\201C" "\201D";
+}
+
+aside blockquote::before {
+	content: open-quote;
+	font-family: ‘Times New Roman’, Times, serif;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+aside blockquote::after {
+	content: close-quote;
+	font-family: ‘Times New Roman’, Times, serif;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+/* Navigation Styles */	
+nav {
+	font-size: 1em;
+}
+
+nav > ul {
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 5px;
+	padding-top: 13px;
+}
+
+nav > ul > li > a {
+	font-family: Cascadia Code SemiBold, Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1em;
+}
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: rgb(151, 151, 151);
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: rgb(255, 64, 255);
+	text-decoration: underline;
+}
+
+/* Footer Styles */
+body > footer address {
+	background-color: rgb(48,25,52);
+	color: white; color: rgba(255, 255, 255, 0.7);
+	font: normal small-caps bold 1.2em/3em
+	Cascadia Code SemiBold, Verdana, Geneva, sans-serif;
+	text-align: center;
+}
